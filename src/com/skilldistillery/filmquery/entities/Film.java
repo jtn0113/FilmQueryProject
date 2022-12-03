@@ -16,8 +16,10 @@ public class Film {
 	private String rating;
 	private String specialFeatures;
 	private List<Actor> actors;
-	
-	public Film() {}
+	private String language;
+
+	public Film() {
+	}
 
 	public Film(int id, String title, String description, int releaseYear, int languageId, int rentalDuration,
 			double rentalRate, int length, double replacementCost, String rating, String specialFeatures) {
@@ -34,12 +36,10 @@ public class Film {
 		this.rating = rating;
 		this.specialFeatures = specialFeatures;
 	}
-	
-	
 
 	public Film(int id, String title, String description, int releaseYear, int languageId, int rentalDuration,
 			double rentalRate, int length, double replacementCost, String rating, String specialFeatures,
-			List<Actor> actors) {
+			List<Actor> actors, String language) {
 		this.id = id;
 		this.title = title;
 		this.description = description;
@@ -52,6 +52,7 @@ public class Film {
 		this.rating = rating;
 		this.specialFeatures = specialFeatures;
 		this.actors = actors;
+		this.language = language;
 	}
 
 	public int getId() {
@@ -142,6 +143,22 @@ public class Film {
 		this.specialFeatures = specialFeatures;
 	}
 
+	public List<Actor> getActors() {
+		return actors;
+	}
+
+	public void setActors(List<Actor> actors) {
+		this.actors = actors;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
 	@Override
 	public String toString() {
 		return "Film [id=" + id + ", title=" + title + ", description=" + description + ", releaseYear=" + releaseYear
@@ -166,9 +183,5 @@ public class Film {
 		Film other = (Film) obj;
 		return id == other.id;
 	}
-	
-	
-	
+
 }
-	
-	

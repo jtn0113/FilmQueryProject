@@ -8,15 +8,16 @@ public class Actor {
 	private String firstName;
 	private String lastName;
 	private List<Film> films;
-	
-	public Actor() {}
-	
+
+	public Actor() {
+	}
+
 	public Actor(int id, String firstName, String lastName) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-	
+
 	public Actor(int id, String firstName, String lastName, List<Film> films) {
 		this(id, firstName, lastName);
 		this.films = films;
@@ -45,8 +46,6 @@ public class Actor {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
 
 	public List<Film> getFilms() {
 		return films;
@@ -55,8 +54,6 @@ public class Actor {
 	public void setFilms(List<Film> films) {
 		this.films = films;
 	}
-
-	
 
 	@Override
 	public String toString() {
@@ -80,6 +77,4 @@ public class Actor {
 		return id == other.id;
 	}
 
-	
-	
 }
