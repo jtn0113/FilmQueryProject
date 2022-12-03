@@ -16,11 +16,11 @@ Option 3 will exit the program.
 ## Film Query Example
 The following is an example of what will be shown if you search for film ID 1:
 
-TITLE: ACADEMY DINOSAUR
-YEAR: 1993
-RATING: PG
-DESCRIPTION: A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies
-LANGUAGE: Japanese
+TITLE: ACADEMY DINOSAUR\
+YEAR: 1993\
+RATING: PG\
+DESCRIPTION: A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies\
+LANGUAGE: Japanese\
 ACTORS: Penelope Guiness, Christian Gable, Lucille Tracy, Sandra Peck, Johnny Cage, Mena Temple, Warren Nolte, Oprah Kilmer, Rock Dukakis, Mary Keitel.
 
 ## Technologies Used
